@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: shark_modeling
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d31a15e4aa626c949b4051163d253f37,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f6919bdc0820d7540bcf3691a4479142, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d31a15e4aa626c949b4051163d253f37, type: 3}
 --- !u!1 &32809644 stripped
@@ -639,6 +644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 91e4778cdfb185d4d9bfe81556dc4333,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0c5b7ffa0a986b24ea0ddfc7e545c76b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e4778cdfb185d4d9bfe81556dc4333, type: 3}
 --- !u!4 &431936809 stripped
@@ -670,7 +680,7 @@ GameObject:
   - component: {fileID: 1107083813}
   - component: {fileID: 1107083812}
   - component: {fileID: 1107083811}
-  - component: {fileID: 1107083810}
+  - component: {fileID: 1107083814}
   m_Layer: 0
   m_Name: ImageTarget_Bee
   m_TagString: Untagged
@@ -678,25 +688,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1107083810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107083809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1107083812}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: bee
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1107083812}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1107083811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +769,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1107083810}
+  mPreview: {fileID: 1107083814}
 --- !u!4 &1107083813
 Transform:
   m_ObjectHideFlags: 0
@@ -795,6 +786,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107083814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107083809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1107083812}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: bee
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1107083812}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!4 &1206117817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4644825145419878, guid: 356d9770fafda4666a5b89318a156f6f,
@@ -1368,7 +1378,7 @@ GameObject:
   - component: {fileID: 2016196478}
   - component: {fileID: 2016196477}
   - component: {fileID: 2016196476}
-  - component: {fileID: 2016196475}
+  - component: {fileID: 2016196479}
   m_Layer: 0
   m_Name: ImageTarget_Fox
   m_TagString: Untagged
@@ -1376,25 +1386,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2016196475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016196474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2016196477}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: fox
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 2016196477}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2016196476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,7 +1467,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2016196475}
+  mPreview: {fileID: 2016196479}
 --- !u!4 &2016196478
 Transform:
   m_ObjectHideFlags: 0
@@ -1493,3 +1484,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016196479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016196474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2016196477}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: fox
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 2016196477}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
